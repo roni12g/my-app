@@ -1,0 +1,20 @@
+.sign-info{
+    margin-top: 10%;
+}
+
+
+
+.sign-btn{
+    .btn:hover{
+        background-color: gray;
+    }
+}
+
+.form-check-input {
+
+&:checked  {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+}

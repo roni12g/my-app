@@ -1,9 +1,19 @@
-import React from "react";
+import  React from "react";
 import "../Login/login.scss";
 import { Form, Button } from "react-bootstrap";
+import {useNavigate} from 'react-router-dom';
 
-const login = (props) => {
+const Login = () => {
+
+  const navigate = useNavigate();
+  
+  const handleNavigation=()=>{
+    navigate('/signIn');
+    
+  }
   return (
+
+    
     <div className="login-info color-overlay d-flex justify-content-center align-items-center">
       <Form className="rounded p-4">
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -28,10 +38,10 @@ const login = (props) => {
 
         <div className="buttons-area">
           <Button variant="dark" className="login-btn" style={{marginRight: "20px" , width:"100px"}} >Login</Button>
-          <Button style={{ width:"100px"}} variant="secondary">Sign In</Button>
+          <Button style={{ width:"100px"}} variant="secondary" onClick={handleNavigation}>Sign In</Button>
         </div>
       </Form>
     </div>
   );
 };
-export default login;
+export default Login;

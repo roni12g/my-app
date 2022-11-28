@@ -6,6 +6,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login/login";
 import About from './About/About';
+import SignIn from './SignIn/SignIn';
 import './App.scss';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/home" index element={<Home />} />
             <Route path="login" index element={<Login />} />
             <Route path="about" index element={<About />} />
+            <Route path="signIn" index element={<SignIn />} />
           </Routes>
         </BrowserRouter>
       </div>
