@@ -1,0 +1,20 @@
+.login-info{
+    margin-top: 10%;
+}
+
+
+
+.login-btn{
+    .btn:hover{
+        background-color: gray;
+    }
+}
+
+.form-check-input {
+
+&:checked  {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+}
