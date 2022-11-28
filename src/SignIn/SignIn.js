@@ -41,12 +41,12 @@ const signIn = () => {
   
           <div style={{textAlign: "left"}}>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Remember Me" />
+            <Form.Check type="checkbox" label="Agree To Terms Of Use" />
           </Form.Group>
           </div>
   
           <div className="buttons-area">
-            <Button variant="dark" className="sign-btn" style={{marginRight: "20px" , width:"100px"}} >Login</Button>
+            <Button variant="dark" className="sign-btn" style={{marginRight: "20px" , width:"100px"}} >Sign Up</Button>
           </div>
         </Form>
       </div>
