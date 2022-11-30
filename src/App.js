@@ -1,12 +1,13 @@
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import React, { useState } from "react";
-import Home from "./Home";
+import Home from "./Components/Home";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./Login/login";
+import Login from "./Components/Login/login";
 import About from './About/About';
-import SignIn from './SignIn/SignIn';
+import SignIn from './Components/SignIn/SignIn';
+import Items from './Components/Item/item';
 import './App.scss';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="login" index element={<Login />} />
             <Route path="about" index element={<About />} />
             <Route path="signIn" index element={<SignIn />} />
+            <Route path="items" index element={<Items />} />
           </Routes>
         </BrowserRouter>
       </div>

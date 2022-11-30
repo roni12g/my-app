@@ -39,7 +39,7 @@ SwiperCore.use([Navigation,Pagination,Autoplay]);
       <div>
       <SwiperSlide> 
         <div className='image-swiper'>
-        <img src={require('../images/'+item)}/>
+        <img src={require('./images/'+item)}/>
         </div>
       </SwiperSlide>
       </div>

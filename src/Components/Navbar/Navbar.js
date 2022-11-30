@@ -19,7 +19,9 @@ return(
       <li className="nav-item">
         <a href="/about" className="nav-link">About</a>
       </li>
- 
+      <li className="nav-item">
+        <a href="/items" className="nav-link">Items</a>
+      </li>
 
    
     </ul>

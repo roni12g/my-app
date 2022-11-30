@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SignIn.scss";
 import { Form, Button } from "react-bootstrap";
-import Popup from '../Components/Popup/Popup';
+import Popup from '../Popup/Popup';
 
 const SignIn = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -42,12 +42,12 @@ const SignIn = () => {
 
         <div style={{ textAlign: "left" }}>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Agree To Terms Of Use" />
+            <Form.Check clastype="checkbox" label='Agree To Term Of Use' style={{fontSize:"12px",color:"gray"}}/>
           </Form.Group>
         </div>
 
         <div className="buttons-area">
-          <Button variant="dark" className="sign-btn" style={{ marginRight: "20px", width: "100px" }} onClick={() => setShowPopup(true)}>Sign Up</Button>
+          <Button variant="dark" className="sign-btn" style={{ marginRight: "20px", width: "100px" }} onClick={() => setShowPopup(true)}>Sign In</Button>
         </div>
       </Form>
       <Popup
@@ -56,6 +56,8 @@ const SignIn = () => {
         subText={'Return To Login Page'}
         buttonReturnText={'Login'}
         setTrigger={setShowPopup}
+        popupType={'info'}
+
       >
       </Popup>
       

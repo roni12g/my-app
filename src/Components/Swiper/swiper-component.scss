@@ -1,6 +1,6 @@
 .container {
     .swiper {
-        margin-top: 15%;
+            margin-top: 15%;
         max-width: 1000px;
 
         .image-swiper {
@@ -33,7 +33,7 @@
 
         .swiper-pagination-bullets,
         .swiper-pagination-bullets.swiper-pagination-horizontal {
-            bottom: auto;
+            bottom: 250px;
             left: 0;
             width: 100%;
             position: fixed;
